@@ -4,7 +4,7 @@ pipeline{
         maven 'M2_HOME'
     }
     stages{
-        stage('mavin build'){
+        stage('maven build'){
             steps{
                 sh 'mvn clean install package'
             }
